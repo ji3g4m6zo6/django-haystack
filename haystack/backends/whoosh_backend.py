@@ -45,8 +45,8 @@ if not hasattr(whoosh, "__version__") or whoosh.__version__ < (2, 5, 0):
 
 # Bubble up the correct error.
 from whoosh import index
-# from whoosh.analysis import StemmingAnalyzer
-from jieba.analyse import ChineseAnalyzer as StemmingAnalyzer
+from whoosh.analysis import StemmingAnalyzer
+# from jieba.analyse import ChineseAnalyzer as StemmingAnalyzer
 from whoosh.fields import ID as WHOOSH_ID
 from whoosh.fields import (
     BOOLEAN,
